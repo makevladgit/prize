@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+
+{% block article %}
+<h6>Для участия в конкурсах, авторизуйтесь через ВКонтакте</h6>
+<h6>Так, мы сможем связаться с вами в случае вашей победы. Удачи!</h6>
+
+	<form = action="/login/" method="post">
+	{%csrf_token%}
+	{{ form }}
+	
+	<br><input type="submit" class="button" value="Войти">
+	
+	</form>
+</div>
+{% endblock %}

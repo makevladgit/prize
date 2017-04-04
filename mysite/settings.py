@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-	'article',
+	'konkurs',
 ]
 
 MIDDLEWARE = [
@@ -57,8 +57,8 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/Users/1/djangoproject/templates',
-		'C:/Users/1/djangoproject/article/templates',],
+        'DIRS': ['./templates',
+		'./article/templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,5 +123,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-	('static', 'C:/Users/1/djangoproject/static'),
+	('static', './static'),
 ]
